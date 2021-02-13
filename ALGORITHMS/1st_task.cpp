@@ -8,7 +8,7 @@ int main()// START of MAIN
   int random_bullet = rand()%101, aim = 100, 
   succes = 0, defeat = 0;
 
-cout << "A sniper starts shoting... ->\n" << endl;
+std::cout << "A sniper starts shoting... ->\n" << std::endl;
 
  while (succes != 3 && defeat != 2)
  {
