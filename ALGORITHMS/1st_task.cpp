@@ -1,4 +1,3 @@
-
 // ---------- 1st) TASK ---------- archer, aim, competition
 #include <iostream>
 #include <ctime>
