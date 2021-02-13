@@ -56,7 +56,6 @@ void generate (char *dna_1, char *dna_2)// START of FUNCTION
   {
    std::cout << dna_2[i];
   }
-
 }// END of function
 
 
@@ -97,5 +96,3 @@ std::cout << "\nThe given DNA chain is: " << dna_1 << "\nIts compatible DNA chai
   
 return 0;
 }// END of MAIN
-
-
