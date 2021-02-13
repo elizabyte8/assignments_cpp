@@ -5,6 +5,7 @@
 
 const int SIZE_OF_DNA_CHAIN = 27;
 
+
 void generate (char *dna_1, char *dna_2)// START of FUNCTION
 { 
   srand(time(NULL));
