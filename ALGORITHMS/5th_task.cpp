@@ -29,7 +29,7 @@ void generate (char *dna_1, char *dna_2)// START of FUNCTION
         case 3:
          dna_1[i] = 'C';
          break;
-      }
+       }
 
 // now let's generate its compatible part
 
