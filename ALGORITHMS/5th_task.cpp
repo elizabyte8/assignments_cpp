@@ -45,56 +45,57 @@ void generate (char *dna_1, char *dna_2)// START of FUNCTION
     i++;
    }// end of while() loop
 
- cout << "\nThe RANDOMLY generated DNA chain:    ";
+  std::cout << "\nThe RANDOMLY generated DNA chain:    ";
   for (i = 0; i < SIZE_OF_DNA_CHAIN; i++)
- {
-  cout << dna_1[i];
- }
+  {
+   std::cout << dna_1[i];
+  }
 
- cout << "\nIts compatible DNA chain looks like: ";
+  std::cout << "\nIts compatible DNA chain looks like: ";
   for (i = 0; i < SIZE_OF_DNA_CHAIN; i++)
- {
-  cout << dna_2[i];
- }
+  {
+   std::cout << dna_2[i];
+  }
 
-} // END OF FUNCTION
+}// END of function
 
-int main () // MAIN
+
+int main ()// START of MAIN
 {
-  string dna_1 = {"GGAGATGGTATGCGGCATTTAAAGAGC"}; // the given DNA chain
-  char dna_2[SIZE_OF_DNA_CHAIN]; // the DNA chain which will be generated 
-  char dna_3[SIZE_OF_DNA_CHAIN]; // the DNA for the function generate()
+  string dna_1 = {"GGAGATGGTATGCGGCATTTAAAGAGC"};// the given DNA chain
+  char dna_2[SIZE_OF_DNA_CHAIN];// the DNA chain which will be generated 
+  char dna_3[SIZE_OF_DNA_CHAIN];// the DNA for the function generate()
 
-cout << "\nThe given DNA chain is: " << dna_1 << "\nIts compatible DNA chain looks like: ";
+std::cout << "\nThe given DNA chain is: " << dna_1 << "\nIts compatible DNA chain looks like: ";
   for (int i = 0; i < SIZE_OF_DNA_CHAIN; i++)
- {
+  {
    if (dna_1[i] == 'G')
-   dna_2[i] = 'C';
+    dna_2[i] = 'C';
    else if (dna_1[i] == 'C')
-   dna_2[i] = 'G';
+    dna_2[i] = 'G';
    else if (dna_1[i] == 'A')
-   dna_2[i] = 'T';
+    dna_2[i] = 'T';
    else 
-   dna_2[i] = 'A';
-   cout << dna_2[i];
- }
+    dna_2[i] = 'A';
+   std::cout << dna_2[i];
+  }
 
-cout << "\n\nThe program will RANDOMLY generate another 5 DNA chains and will find its compatible chains.\n\n1st pair: ";
-generate(dna_2,dna_3);
-
-cout <<"\n\n2nd pair: ";
+ std::cout << "\n\nThe program will RANDOMLY generate another 5 DNA chains and will find its compatible chains.\n\n1st pair: ";
  generate(dna_2,dna_3);
 
-cout <<"\n\n3rd pair: ";
+ std::cout <<"\n\n2nd pair: ";
  generate(dna_2,dna_3);
 
-cout <<"\n\n4th pair: ";
+ std::cout <<"\n\n3rd pair: ";
  generate(dna_2,dna_3);
 
-cout <<"\n\n5th pair: ";
-generate(dna_2,dna_3);
+ std::cout <<"\n\n4th pair: ";
+ generate(dna_2,dna_3);
 
+ std::cout <<"\n\n5th pair: ";
+ generate(dna_2,dna_3);
+  
 return 0;
-} // END
+}// END of MAIN
 
 
