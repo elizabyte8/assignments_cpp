@@ -76,7 +76,7 @@ int main()// START of MAIN
          if (j == 3)
          {
           people = 0; 
-          cout <<"\n\nIt is " << week[i] << "\nThe bus went through the\n" << stations[j]<<"_station and it took "<< people << " passangers because it is a TERMINAL STATION."; 
+          std::cout <<"\n\nIt is " << week[i] << "\nThe bus went through the\n" << stations[j]<<"_station and it took "<< people << " passangers because it is a TERMINAL STATION."; 
          }
        } 
      } 
