@@ -34,6 +34,6 @@ cout << "A sniper starts shoting... ->\n" << endl;
     std::cout << "\nUnfortunately, the sniper defeated 2 times. He lost the competition... " << std::endl;
    if (succes == 3)
     std::cout << "\n!OMG! The sniper won the competition! He is the winner!" << std::endl;
- }
+ }// END of main while loop
 return 0; 
 }// END of MAIN
