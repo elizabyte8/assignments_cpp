@@ -83,16 +83,16 @@ std::cout << "\nThe given DNA chain is: " << dna_1 << "\nIts compatible DNA chai
  std::cout << "\n\nThe program will RANDOMLY generate another 5 DNA chains and will find its compatible chains.\n\n1st pair: ";
  generate(dna_2,dna_3);
 
- std::cout <<"\n\n2nd pair: ";
+ std::cout << "\n\n2nd pair: ";
  generate(dna_2,dna_3);
 
- std::cout <<"\n\n3rd pair: ";
+ std::cout << "\n\n3rd pair: ";
  generate(dna_2,dna_3);
 
- std::cout <<"\n\n4th pair: ";
+ std::cout << "\n\n4th pair: ";
  generate(dna_2,dna_3);
 
- std::cout <<"\n\n5th pair: ";
+ std::cout << "\n\n5th pair: ";
  generate(dna_2,dna_3);
   
 return 0;
