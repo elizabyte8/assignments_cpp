@@ -79,8 +79,8 @@ int main()// START of MAIN
           people = 0; 
           std::cout << "\n\nIt is " << week[i] << "\nThe bus went through the\n" << stations[j] << "_station and it took " << people << " passangers because it is a TERMINAL STATION."; 
          }
-       } 
-     } 
+       }// END of [j] for loop 
+     }// END of [i] for loop
    }// END of main while loop
  std::cout << "\n\n\n[_The bus had total " << total_people << " passangers from 9/7 to 15/7 of the Summer 2018_]";
 
