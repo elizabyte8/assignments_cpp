@@ -7,7 +7,7 @@ int main ()// START of MAIN
 {
  int first_num, second_num;
  
- //__1st_quest_segment
+ //__1st_subtask_segment
  std::cout << "\nThis programm will help you to have some fun with mathemathical operations.\nJust give me two three-digit numbers.\n!PLEASE NOTICE! that their range can be STRICTLY from -999 up to 999.\nSo, your first three-digit number is: "<< std::endl;
 
  do 
@@ -63,7 +63,7 @@ int main ()// START of MAIN
    std::cout << "You entered two numbers with differend signs, the program decided to show you their multiplication: " << result;
  }
 
-//__2nd_quest_segment
+//__2nd_subtask_segment
  int num1 = first_num/100%10;// the way to get the first digit only
  int num2 = second_num%10;// the way to get the third digit only
 // first_num/10%10 -> the way to get the second digit only
