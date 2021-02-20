@@ -121,25 +121,40 @@ int main()// START of MAIN
     } 
  } while (check == false);
 
+ //__1st_subtask_segment
+ 
   std::cout <<"\nIts reverse form looks like: ";
-   reverse (users_string);// 1st) subtask
+   reverse (users_string);
+ 
+  //__2nd_subtask_segment
+
   std::cout <<"\nFor each even iterator of the word its letters will be converted into uppercase,  for each odd into lowercase: ";
-   lowercase_or_uppercase (users_string);// 2nd) subtask
+   lowercase_or_uppercase (users_string);
+
+  //__3rd_subtask_segment
 
   std::cout << "\nEach odd letter will be removed by its ASCCI symbol ";
-   if_odd_then_ascci_symbol (users_string);// 3rd) subtask
+   if_odd_then_ascci_symbol (users_string);
+ 
+ //__4rth_subtask_segment
 
  std::cout << "\nAll letters are sorted in alphabetical descending order ";
-  in_descending_order (users_string);// 4rth) subtask
+  in_descending_order (users_string);
+ 
+ //__5th_subtask_segment
 
  std::cout << "\nThe previous letter will be swapped by the next one ";
-  swapped_by_next (users_string);// 5th) subtask
+  swapped_by_next (users_string);
+ 
+ //__6th_subtask_segment
 
  std::cout << "\nLetter's number in alphabet will be printed ";
-  number_in_alphapet_instead_of_letter (users_string);// 6th) subtask
+  number_in_alphapet_instead_of_letter (users_string);
+ 
+  //__7th_subtask_segment
 
  std::cout << "\nConsonants will be priinted fistly, and after that vowels ";
-  consonant_and_vowel (users_string);// 7th) subtask
+  consonant_and_vowel (users_string);
 
 return 0;
 }// END of MAIN
