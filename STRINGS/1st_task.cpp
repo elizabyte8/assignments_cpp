@@ -42,7 +42,8 @@ class String// START of class
  std::vector <std::string> strings;
  std::vector <std::string>::iterator it;
 
-
+//__code_segment
+  
  String()// START of default constructor
  {
   first    =   "About 75% of our brain is made up of water.";
