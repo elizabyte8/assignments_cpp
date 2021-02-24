@@ -31,7 +31,7 @@ class String// START of class
  std::string fifth;
  std::string sixth;
  std::string seventh;
- std::string eighth;
+ std::string eighth; 
  std::string ninth;
  std::string tenth;
  std::string temporary;
