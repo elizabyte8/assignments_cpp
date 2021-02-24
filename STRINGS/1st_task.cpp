@@ -147,8 +147,6 @@ class String// START of class
 
  void number_of_all_letters()// START of func
  {
-  int counter2 = 1;
-  
   std::cout << std::endl << "\n\t\t\t\t4__PRINTS DUBLICATE NUMBER OF EVERY LETTER IN ALL STRINGS\n" << std::endl;
     for(auto i = splitted_words2.begin(); i < splitted_words2.end(); i++)
     {   
@@ -156,13 +154,13 @@ class String// START of class
       {     
         if(*i == *j)
         {         
-          counter2++; 
+          counter++; 
           splitted_words2.erase(j);    
         }     
       }
                       
-      std::cout <<"The letter /symbol < " << *i << " > is repeated " << counter2 << " times" << std::endl;
-      counter2 = 1;
+      std::cout <<"The letter /symbol < " << *i << " > is repeated " << counter << " times" << std::endl;
+      counter = 1;
 
       splitted_words2.erase(i); 
     }// end of [i] loop
@@ -196,5 +194,7 @@ int main()// START of MAIN
  //__4rth_subtask_segment
 
  s.number_of_all_letters();
+  
+  
 return 0;
 }// END of MAIN
