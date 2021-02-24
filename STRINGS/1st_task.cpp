@@ -129,8 +129,8 @@ class String// START of class
           }                     
    
         } counter = 1;    
-      }// end of dublicate words control [i] & [j]    
-    }// end of picking words from each string & collecting them to vector [x]
+      }// end of dublicate words control [i] & [j] loops 
+    }// end of picking words from each string & collecting them to vector [x] loop
 
   for(auto const &c : splitted_words)
     splitted_words2.append(c);// fills words into array of letters (without spaces)
