@@ -189,7 +189,7 @@ class String// START of class
       for (auto j = 0; j < _2d_vec_of_strings[i].size(); j++ )
       { 
         if(input == _2d_vec_of_strings[i][j])
-          for(auto string_ : _2d_vec_of_strings[i]) 
+          for(auto &string_ : _2d_vec_of_strings[i]) 
           {  
             std::cout <<" ";
             for(auto const &char_ : string_)
