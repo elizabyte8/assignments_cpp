@@ -81,7 +81,7 @@ class String// START of class
  }// END of method
 
 
- int *letters(int index)// START of method
+ int *letters(int const &index)// START of method
  {
   int number_of[2] = {0,0};// returns both vowels and consonants
 
@@ -112,7 +112,7 @@ class String// START of class
   
     for(decltype(strings.size()) k = 0; k < strings.size(); k++)
     { 
-      for (auto x : strings[k])// picks words from each string  
+      for (auto const &x : strings[k])// picks words from each string  
       { 
         if (x == ' ') 
         { 
@@ -134,12 +134,12 @@ class String// START of class
         } counter = 1;   
       }// end of dublicate words control [i] & [j] loops 
       }// end of picking words from each string & collecting them to vector [x] loop
-    for(auto const &m : Map)
-    std::cout << "The " << k + 1 << " string has repeated word << "<< m.first << " >> and it's repeated " << m.second << " times." << std::endl;
+    for(auto const &map : Map)
+    std::cout << "The " << k + 1 << " string has repeated word << "<< map.first << " >> and it's repeated " << map.second << " times." << std::endl;
 
     // for the 4th subtask
-    for(auto const &c : splitted_words)
-     all_characters.append(c);// fills words into array of letters (without spaces)
+    for(auto const &chars : splitted_words)
+     all_characters.append(chars);// fills words into array of letters (without spaces)
     // for the func number_of_all_letters(), which counts occurrence of each letter in all 10 strings
     
     // for the 5th subtask
@@ -156,6 +156,7 @@ class String// START of class
  {
   std::cout << std::endl << "\n\t\t\t\t4_PRINTS DUBLICATE NUMBER OF EVERY LETTER IN ALL STRINGS\n" << std::endl;
   std::string::iterator it1;
+
     for(auto i = 0; i < all_characters.size(); i++)
     {
      counter++; 
@@ -251,10 +252,10 @@ void enter_number(std::vector<std::vector<std::string>> &_2d_vec_of_strings, int
         {
           std::cout << std::endl;   
         // start of loops to print the result ->
-          for(auto const string_ : _2d_vec_of_strings[i])
+          for(auto const &string_ : _2d_vec_of_strings[i])
           {
             std::cout <<" ";
-              for(auto const char_ : string_)
+              for(auto const &char_ : string_)
                 std::cout << char_;      
           } std::cout << std::endl; 
         }//end of nested if 
@@ -385,7 +386,7 @@ int main()// START of MAIN
     std::cin >> input;
 
     if(identify_input(input) == -1)
-    help(s);
+      help(s);
 
     if(identify_input(input) == 0)
       s.enter_word(_2d_vec_of_strings, input);
@@ -411,11 +412,12 @@ int main()// START of MAIN
         else
           continue;
     }
-      else
-      {
-        std::cout << "\nPlease, make sure you entered number/ word/ HELP/ < . >symbol" << std::endl;
+    if(identify_input(input) == 3)
+    {
+      std::cout << "\nPlease, make sure you entered number/ word/ help/ < . >symbol" << std::endl;
+      std::cout << "Enter anything to go bach to main menu" << std::endl;
         std::cin >> input;
-      }
+    }
  }while(!terminate);
 
 return 0;
