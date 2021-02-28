@@ -223,7 +223,7 @@ void enter_number(std::vector<std::vector<std::string>> &_2d_vec_of_strings, int
     { 
       for (auto j = 0; j < _2d_vec_of_strings[i].size(); j++)
       {
-        it1 = next(_2d_vec_of_strings[i].begin(), j);
+        it1 = std::next(_2d_vec_of_strings[i].begin(), j);
           if(_2d_vec_of_strings[i][j].size() == int_input)
             _2d_vec_of_strings[i].erase(it1);// deletes word with 3 letters
       }// end of [j] loop  
@@ -259,7 +259,7 @@ void enter_number(std::vector<std::vector<std::string>> &_2d_vec_of_strings, int
                 std::cout << char_;      
           } std::cout << std::endl; 
         }//end of nested if 
-        it1 = next(_2d_vec_of_strings[i].begin(), j);
+        it1 = std::next(_2d_vec_of_strings[i].begin(), j);
       }// end of [j] loop
     }// end of [i] loop
   }// end of second MAIN if 
