@@ -373,7 +373,7 @@ int main()// START of MAIN
 // |__SECOND_PART_OF_THE_ASSIGNMENT__|
  //__1-2-3-4_subtasks_of_SECOND_TASK_segment
  std::string input;
- int int_input;// for atoi() func
+ int int_input;// for stoi() func
  bool terminate = false;// for do while loop
 
  do
