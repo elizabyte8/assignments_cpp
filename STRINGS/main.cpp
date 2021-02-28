@@ -344,7 +344,7 @@ void help(String s)// START of func
 
 int main()// START of MAIN
 {
-// |__FIRST_TASK_OF_THE_ASSIGNMENT__|
+// |__FIRST_PART_OF_THE_ASSIGNMENT__|
  
  String s;// initializes an object of a class String and its default constructor
  static int size = s.strings.size();
