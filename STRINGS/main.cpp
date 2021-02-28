@@ -192,7 +192,7 @@ class String// START of class
           for(auto string_ : _2d_vec_of_strings[i]) 
           {  
             std::cout <<" ";
-            for(auto char_ : string_)
+            for(auto const &char_ : string_)
             std::cout << char_;
           }
       } std::cout << std::endl;
@@ -230,10 +230,10 @@ void enter_number(std::vector<std::vector<std::string>> &_2d_vec_of_strings, int
     }// end of [i] loop
     // start of loops to print the result ->
       for(auto i = 0; i < _2d_vec_of_strings.size(); i++ )
-        for(auto string_ : _2d_vec_of_strings[i])
+        for(auto const &string_ : _2d_vec_of_strings[i])
         {
           std::cout <<" ";
-            for(auto char_ : string_)
+            for(auto const &char_ : string_)
               std::cout << char_;
         } std::cout << std::endl;
   }// end of first MAIN if (which excludes 3-lengthed words)
